@@ -1,15 +1,16 @@
-// packages
 const express = require('express');
-// app instance, one application
 const app = express();
 
-// route "/"
+app.set('view engine','ejs');
+
 app.get('/', function(req,res){
-  // the response to client is "Maoee Silvio!"
-  res.send("Maoee Silvio!");
+  res.render('map');
 })
 
-// open connection on port 3000
+app.get('/register', function(req,res){
+  res.render('register');
+})
+
 app.listen(3000,function(){
   console.log("Ouvindo a porta 3000!");
 })
