@@ -19,3 +19,7 @@ Mapa colaborativo de São Carlos
 * Leaflet Open Street Maps
 * Expressjs
 
+## Como executar
+* git clone
+* npm install
+* node app
