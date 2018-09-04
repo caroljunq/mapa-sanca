@@ -1,0 +1,19 @@
+{
+  "name": "mapa-sanca",
+  "version": "1.0.0",
+  "description": "Minicurso nodejs para Semana da Computação (SECOMP) UFSCAR 2018",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caroljunq/mapa-sanca.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caroljunq/mapa-sanca/issues"
+  },
+  "homepage": "https://github.com/caroljunq/mapa-sanca#readme"
+}
