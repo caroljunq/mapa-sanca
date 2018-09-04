@@ -5,6 +5,14 @@
   <title>Mapa Sanca</title>
 </head>
 <body>
-  Meu texto no register.ejs
+  <h2>Registro de novas localizações</h2>
+  <form action="/register" method="post">
+    Nome do ponto: <input type="text" name="name"><br>
+    Descrição: <input type="text" name="description"><br>
+    Seu nome: <input type="text" name="author"><br>
+    Latitude: <input type="text" name="lat"><br>
+    Longitude: <input type="text" name="lng"><br>
+    <input type="submit" value="Registrar">
+  </form>
 </body>
 </html>
