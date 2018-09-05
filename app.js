@@ -1,8 +1,9 @@
-const db = require("./db-connection.js");
+// const db = require("./db-connection.js");
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mapCtrl = require("./controllers/map-controller");
+const db = require('./models/firebase');
 
 app.set('view engine','ejs');
 app.use('/public', express.static(__dirname + '/public'));
@@ -11,8 +12,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req,res){
-  mapCtrl.all()
+  db.all()
   .then((coordinates) => {
+    console.log(coordinates)
     res.render('map',{results: coordinates});
   })
   .catch((err) =>{
@@ -25,7 +27,7 @@ app.get('/register', function(req,res){
 })
 
 app.post('/post-register', function(req,res){
-  mapCtrl.save(req.body)
+  db.save(req.body)
   .then(() => {
     res.redirect("/");
   })

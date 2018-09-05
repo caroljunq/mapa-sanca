@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mapa-sanca",
+  "private_key_id": "68771714de4a07d14a1fd298448629dbbd730f9c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDQ3TZs1ONTagi7\nkyz+bQ8QvyPFVyRIBJ1vmvJTsHPvaySzlDRCagdoFrea/ATsvuSxhx8fGStQIQ5O\nOGOSK2f+FM2IRCSfFoudPhL1AImUPHh/oWp28OryB+3GSujaDRNydzHm0McmGLzz\nlucFSUumSulLOim9VW8hrSEksbCQ0iDOJ6GuWsYHZ4yvwrefS+DCPaHPSC7SCauu\n+aaIN6ckKcEhRt8LcBBwNDd8oWaLvNxijt3rs1jPXMa7nfyVznB8wRg6uA9zP+T6\nE4ns2kJkIL5FrJeInIIigOtD+GVyIedE3DOPfkIFq1j92beW+iUKG5FFgVmWxrID\nsowjihZlAgMBAAECggEAByTJON4Qdx1fpClV+TzHwM+hYS+2E5M6QyN9LkD1qQa5\nTKuFnMaf097lCoouWswpYOvE4cQqOOe1rMy4ukO9cWzmOXSZxsVXYugJJk8o7p/8\n/8+tJzTLe9DPiZuIqGMrLVxDGJG+/W3n0ft6NkSKCxkxd73mbTbqPUKF6VvGWXvs\n3P9DMS7xiq5wQDNTrgXm9c1xSIF4yGYLV7/NPdGLW2qWfkBIAl/Wcf0c4UaCPW/+\nWxVhe6W7hBwOB6VlNtiEZDHqKyfDH3tptFBDv+xsIcbnZlWy9BJhCZjHcwr7RXgL\nAakjhKnMk8vzr12bZRI92M7HEApq96vr/hWnG7S36QKBgQDrOTNJxuvl0uzPaV/y\nTKMYCYxM8RLUDT+FWaidIIhRUDjnhgJWGPHBMCIU/NP2zQArw52TCLAGXp3+4FEn\norZIgrQBynZVpxHwC05g3TrXTHbSbrCXlfIqeQi48BzD/ef59vx1J3M/vN5xb6VE\nyz3vVZaTtxSXSEk2yh4nxMftLQKBgQDjT/u5j8edHUCzgKOY4GsGNPlFu7eajVIm\nv5gyejcM+/9IesGwU7KCvrlsPr/lp2/CFOubcMj3xQSktO5O+zFmy4/yvqjt6NEn\neN/714oaqd+rFNY4qWiCgC0J7Cx0Ia36DDVjFmr02qPTFpzYVJGTLJk0Irec5cVB\nE4gwzinBGQKBgQCA7TQ4XuiTan3T3WzycKEAHtOgpI3uXmiPnan2nYs6Dl9yPxhu\nunNfsRMtL7q6TnimhCyNF7jrdNbiiW7R67Q/oCwrwx4DKnSBfqDyJLAIq+eAxZzT\nKSO3tela/Hi30CZi8sZDLGFV8R53THtoboG++clzo2iM1tkSR8wpfgka7QKBgQCr\neif8OOGtvWaUwyMm7YzvFsFBALYmChwCDSDkW1vyGJvg8nHw8YLFrNk2NjQPK/tb\n3upJzZBdkSvKkI8B1+7RjBigV4IaTzqQ21ekpVmSebm4VrSv8+RaJhVT2e1DAjE7\nY0BW6o9u/Qz+7Z0OeOWEr+027kWzP4ZJbFGd97h56QKBgQDl4WROJuSJ1Aki94fJ\nOPashS5NTI9YwKlIMfJdtjhbu5dPbSLjItZtcXQV4kYp/iU8hPpB1A4iKKmPIaCN\nkX1WBMRiYTUBI24IOdhF9RCS/Ts1n1+TU+vgvzJv9l9g8unUeF5ZGgnf7+uQIdWU\nrm+d/hdDo1cgzdUt8x1uhfZJ6A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-lrd4g@mapa-sanca.iam.gserviceaccount.com",
+  "client_id": "103167293982980976774",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-lrd4g%40mapa-sanca.iam.gserviceaccount.com"
+}
