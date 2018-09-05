@@ -8,7 +8,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req,res){
-  res.render('map');
+  let obj = {
+    name: "teste",
+    description: "descricao",
+    author: "alguem",
+    lat: "123",
+    lng: "44"
+  };
+  res.render('map',obj);
 })
 
 app.get('/register', function(req,res){
@@ -16,8 +23,7 @@ app.get('/register', function(req,res){
 })
 
 app.post('/post-register', function(req,res){
-  res.render('map');
-  console.log(req.body);
+  res.render('map',req.body);
 })
 
 app.listen(3000,function(){
