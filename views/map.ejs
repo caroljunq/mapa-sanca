@@ -3,12 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>Mapa Sanca</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
 </head>
 <body>
-  <div>Nome: <%= name %></div>
-  <div>Descrição: <%= description %></div>
-  <div>Autor: <%= author %></div>
-  <div>Latitude: <%= lat %></div>
-  <div>Longitude <%= lng %></div>
+  <div id="mapid" style="height: 500px; width: 100%"></div>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+  <script>
+    let mymap = L.map("mapid").setView([-22.0087,-47.8909],13);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    }).addTo(mymap)
+    let coordinates = <%-JSON.stringify(results)%>;
+    for(let i = 0; i < coordinates.length; i++){
+      let text = "<h3>" + coordinates[i].name + "</h3><p>Descrição: "+ coordinates[i].description +
+      "</p><p>Autor: " + coordinates[i].author+ "</p>";
+      L.marker([coordinates[i].lat,coordinates[i].lng]).bindTooltip(text,{direction: 'top'}).addTo(mymap);
+    }
+  </script>
 </body>
+
 </html>

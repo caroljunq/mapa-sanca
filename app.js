@@ -10,21 +10,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req,res){
-  let obj = {
-    name: "teste",
-    description: "descricao",
-    author: "alguem",
-    lat: "123",
-    lng: "44"
-  };
   mapCtrl.all()
   .then((coordinates) => {
-    console.log(coordinates)
+    res.render('map',{results: coordinates});
   })
   .catch((err) =>{
     res.send("Banco de dados deu problema");
   });
-  res.render('map',obj);
 })
 
 app.get('/register', function(req,res){
