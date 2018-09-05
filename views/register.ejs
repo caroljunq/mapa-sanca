@@ -6,18 +6,23 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
   crossorigin=""/>
+  <link rel="stylesheet" href="/public/style.css"/>
 </head>
 <body>
-  <h2>Registro de novas localizações</h2>
-  <form action="/post-register" method="post">
-    Nome do ponto: <input type="text" name="name"><br>
-    Descrição: <input type="text" name="description"><br>
-    Seu nome: <input type="text" name="author"><br>
-    Latitude: <input id="latitude" type="text" name="lat"><br>
-    Longitude: <input id="longitude" type="text" name="lng"><br>
-    <input type="submit" value="Registrar">
-  </form>
-  <div id="mapid2" style="height: 500px; width: 100%"></div>
+  <div class="linha meio">
+  	<h2 style="font-family:roboto; color:#d06707d6;">Registro de novas localizações</h2>
+	</div>
+  <div class="linha">
+    <form action="/post-register" method="post">
+      <input type="text" name="name" placeholder="Nome do ponto">
+  	  <input type="text" name="description" placeholder="Descrição">
+  	  <input type="text" name="author" placeholder="Seu nome">
+  	  <input id="latitude" type="text" name="lat" placeholder="Latitude">
+  	  <input id="longitude" type="text" name="lng" placeholder="Longitude">
+  	  <input type="submit" value="Registrar localização" class="button-submit">
+  	</form>
+    <div id="mapid2"></div>
+  </div>
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
    crossorigin=""></script>
@@ -40,7 +45,7 @@
     'Arraste-me',{permanent: true, interactive: true, direction: 'top'})
       .on('move',function(event){
         let coordenadas = "<div>Lat: "+ event.latlng.lat + "</div><div>Lng: " +
-        event.latlng.lng + "</div><button onclick='copyCoord()'>Copiar</button>";
+        event.latlng.lng + "</div><button onclick='copyCoord()' class='button-submit'>Copiar</button>";
         coord.lat = event.latlng.lat;
         coord.lng = event.latlng.lng;
         this.bindTooltip(coordenadas);

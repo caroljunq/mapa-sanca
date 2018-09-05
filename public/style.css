@@ -1,0 +1,54 @@
+form{
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+}
+
+#mapid2{
+  min-width: 70%;
+  height: 500px;
+}
+
+.linha{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meio{
+  justify-content: center;
+}
+
+@media (max-width: 690px){
+  #mapid2{
+    width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
+}
+
+input{
+    padding: .5em .6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 7px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.button-submit{
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    color: white;
+    border: 1px solid #999;
+    border: transparent;
+    background-color: #2980ca;
+    text-decoration: none;
+    border-radius: 2px;
+}
