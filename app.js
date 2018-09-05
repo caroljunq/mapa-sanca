@@ -1,6 +1,8 @@
+const db = require("./db-connection.js");
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const mapCtrl = require("./controllers/map-controller");
 
 app.set('view engine','ejs');
 
@@ -15,6 +17,13 @@ app.get('/', function(req,res){
     lat: "123",
     lng: "44"
   };
+  mapCtrl.all()
+  .then((coordinates) => {
+    console.log(coordinates)
+  })
+  .catch((err) =>{
+    res.send("Banco de dados deu problema");
+  });
   res.render('map',obj);
 })
 
