@@ -24,7 +24,13 @@ app.get('/register', function(req,res){
 })
 
 app.post('/post-register', function(req,res){
-  res.render('map',req.body);
+  mapCtrl.save(req.body)
+  .then(() => {
+    res.redirect("/");
+  })
+  .catch((err) =>{
+    res.send("Deu ruim ao registrar!!");
+  });
 })
 
 app.listen(3000,function(){
